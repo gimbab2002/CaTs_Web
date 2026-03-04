@@ -13,7 +13,7 @@ export default async function AboutPage() {
   const startYear = Math.min(...history.map((h) => h.year));
   const currentYear = new Date().getFullYear();
   const yearsHistory = currentYear - startYear + 1;
-  const activeMembersCount = members.filter((m) => m.status === "student" || m.status === "재학").length;
+  const activeMembersCount = members.filter((m) => m.status === "재학").length;
   const projectsCount = projects.length;
 
   return (
